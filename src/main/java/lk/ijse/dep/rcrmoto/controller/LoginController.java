@@ -38,7 +38,7 @@ public class LoginController {
         try{
             if(0==0){
 //                loginBO.authentication(new LoginDTO(txtUsername.getText(),txtPassword.getText()))
-                Scene subScene = new Scene(FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/MainForm.fxml")));
+                Scene subScene = new Scene(FXMLLoader.load(this.getClass().getResource("/view/MainForm.fxml")));
                 Stage primaryStage = (Stage) this.loginPane.getScene().getWindow();
 
                 primaryStage.setScene(subScene);

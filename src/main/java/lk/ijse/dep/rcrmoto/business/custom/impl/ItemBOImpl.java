@@ -22,17 +22,17 @@ public class ItemBOImpl implements ItemBO {
 
     @Override
     public void saveItem(ItemDTO item) throws Exception {
-            itemDAO.save(new Item(item.getItemId(),categoryDAO.find(item.getCategoryId()),item.getBrand(),item.getDescription(),item.getQtyOnHand(),item.getBuyPrice(),item.getUnitPrice()));
+            itemDAO.save(new Item(item.getItemId(),categoryDAO.findById(item.getCategoryId()).get(),item.getBrand(),item.getDescription(),item.getQtyOnHand(),item.getBuyPrice(),item.getUnitPrice()));
     }
 
     @Override
     public void updateItem(ItemDTO item) throws Exception {
-            itemDAO.update(new Item(item.getItemId(),categoryDAO.find(item.getCategoryId()),item.getBrand(),item.getDescription(),item.getQtyOnHand(),item.getBuyPrice(),item.getUnitPrice()));
+            itemDAO.save(new Item(item.getItemId(),categoryDAO.findById(item.getCategoryId()).get(),item.getBrand(),item.getDescription(),item.getQtyOnHand(),item.getBuyPrice(),item.getUnitPrice()));
     }
 
     @Override
     public void deleteItem(String id) throws Exception {
-            itemDAO.delete(id);
+            itemDAO.deleteById(id);
     }
 
     @Override

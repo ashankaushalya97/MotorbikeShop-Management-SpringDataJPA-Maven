@@ -26,12 +26,12 @@ public class CustomerBOImpl implements CustomerBO {
 
     @Override
     public void updateCustomer(CustomerDTO customer) throws Exception {
-        customerDAO.update(new Customer(customer.getCustomerId(),customer.getName(),customer.getContact()));
+        customerDAO.save(new Customer(customer.getCustomerId(),customer.getName(),customer.getContact()));
     }
 
     @Override
     public void deleteCustomer(String id) throws Exception {
-        customerDAO.delete(id);
+        customerDAO.deleteById(id);
     }
 
     @Override

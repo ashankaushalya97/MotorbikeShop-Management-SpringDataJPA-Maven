@@ -25,12 +25,12 @@ public class DeliveryBOImpl implements DeliveryBO {
 
     @Override
     public void updateDelivery(DeliveryDTO delivery) throws Exception {
-            deliveryDAO.update (new Delivery(delivery.getDeliveryId(),delivery.getOrderId(),delivery.getAddress(),delivery.getStates()));
+            deliveryDAO.save (new Delivery(delivery.getDeliveryId(),delivery.getOrderId(),delivery.getAddress(),delivery.getStates()));
     }
 
     @Override
     public void deleteDelivery(String deliveryId, String orderId) throws Exception {
-            deliveryDAO.delete(new DeliveryPK(deliveryId,orderId));
+            deliveryDAO.deleteById(new DeliveryPK(deliveryId,orderId));
     }
 
     @Override

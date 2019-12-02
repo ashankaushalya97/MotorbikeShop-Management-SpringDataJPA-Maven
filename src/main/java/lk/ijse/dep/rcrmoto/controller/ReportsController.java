@@ -86,7 +86,7 @@ public class ReportsController {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    JasperReport jasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResourceAsStream("/lk/ijse/dep/lk.ijse.dep.rcrmoto/reports/customer.jasper"));
+                    JasperReport jasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResourceAsStream("/reports/customer.jasper"));
 
                     Map<String,Object> params = new HashMap<>();
                     JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,params,new JRBeanCollectionDataSource(loadCustomers));
@@ -102,7 +102,7 @@ public class ReportsController {
                             ,item.getQtyOnHand(),item.getBuyPrice(),item.getUnitPrice()
                             ));
                         }
-                        jasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResourceAsStream("/lk/ijse/dep/lk.ijse.dep.rcrmoto/reports/item.jasper"));
+                        jasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResourceAsStream("/reports/item.jasper"));
                         Map<String,Object> params2 = new HashMap<>();
                         jasperPrint = JasperFillManager.fillReport(jasperReport,params2,new JRBeanCollectionDataSource(loadItems));
                         JasperViewer.viewReport(jasperPrint,false);
@@ -121,7 +121,7 @@ public class ReportsController {
                         for (DeliveryDTO deliveryDTO : delivery) {
                             loaddeliveries.add(new DeliveryTM(deliveryDTO.getDeliveryId(),deliveryDTO.getOrderId(),deliveryDTO.getAddress(),deliveryDTO.getStates()));
                         }
-                        jasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResourceAsStream("/lk/ijse/dep/lk.ijse.dep.rcrmoto/reports/delivery.jasper"));
+                        jasperReport = (JasperReport) JRLoader.loadObject(this.getClass().getResourceAsStream("/reports/delivery.jasper"));
                         Map<String,Object> params2 = new HashMap<>();
                         jasperPrint = JasperFillManager.fillReport(jasperReport,params2,new JRBeanCollectionDataSource(loaddeliveries));
                         JasperViewer.viewReport(jasperPrint,false);

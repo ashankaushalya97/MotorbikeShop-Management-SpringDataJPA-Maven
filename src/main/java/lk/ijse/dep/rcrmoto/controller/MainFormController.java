@@ -26,7 +26,7 @@ public class MainFormController {
     public void initialize(){
 
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Home.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Home.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);
@@ -38,7 +38,7 @@ public class MainFormController {
 
     public void btnHome_OnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Home.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Home.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);
@@ -50,7 +50,7 @@ public class MainFormController {
 
     public void btnCustomer_OnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Customer.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Customer.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);
@@ -61,7 +61,7 @@ public class MainFormController {
     }
     public void btnInventory_OnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Inventory.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Inventory.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);
@@ -74,7 +74,7 @@ public class MainFormController {
 
     public void btnOrder_OnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Order.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Order.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);
@@ -86,7 +86,7 @@ public class MainFormController {
     }
     public void btnDelivery_OnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Delivery.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Delivery.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);
@@ -99,7 +99,7 @@ public class MainFormController {
 
     public void btnSearch_OnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Search.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Search.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);
@@ -161,7 +161,7 @@ public class MainFormController {
 
     public void btnReports_OnAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/Reports.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Reports.fxml"));
             ArpStage.getChildren().clear();
             ArpStage.getChildren().add(root);
             fade(root);

@@ -51,7 +51,8 @@ public class AppInitializer extends Application {
 
 //            DBConnection.getInstance().getConnection();
 
-            URL resource = this.getClass().getResource("/view/Login.fxml");
+//            URL resource = this.getClass().getResource("/view/Login.fxml");
+            URL resource = this.getClass().getResource("/view/MainForm.fxml");
             Parent root = FXMLLoader.load(resource);
             primaryStage.initStyle(StageStyle.UNDECORATED);
             primaryStage.setResizable(false);

@@ -1,12 +1,11 @@
 package lk.ijse.dep.rcrmoto.dao.custom;
 
-import lk.ijse.dep.rcrmoto.dao.CrudDAO;
 import lk.ijse.dep.rcrmoto.entity.Customer;
-import org.hibernate.Session;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface CustomerDAO extends CrudDAO<Customer,String> {
+public interface CustomerDAO extends JpaRepository<Customer,String> {
 
     String getLastCustomerId()throws Exception;
 

@@ -62,16 +62,16 @@ public class SearchController {
             FXMLLoader fxmlLoader = null;
             switch (icon.getId()) {
                 case "customerPane":
-                    root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/CustomerSearch.fxml"));
+                    root = FXMLLoader.load(this.getClass().getResource("/view/CustomerSearch.fxml"));
                     break;
                 case "inventoryPane":
-                    root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/InventorySearch.fxml"));
+                    root = FXMLLoader.load(this.getClass().getResource("/view/InventorySearch.fxml"));
                     break;
                 case "ordersPane":
-                    root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/OrderSearch.fxml"));
+                    root = FXMLLoader.load(this.getClass().getResource("/view/OrderSearch.fxml"));
                     break;
                 case "deliveryPane":
-                    root = FXMLLoader.load(this.getClass().getResource("/lk/ijse/dep/lk.ijse.dep.rcrmoto/view/DeliverySearch.fxml"));
+                    root = FXMLLoader.load(this.getClass().getResource("/view/DeliverySearch.fxml"));
                     break;
             }
 
